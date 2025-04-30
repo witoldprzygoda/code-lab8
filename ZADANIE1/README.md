@@ -1,0 +1,3 @@
+### Zadanie 1
+
+Dla klasy TString zdefiniuj najpierw const char& operator[](std::size_t n) const;  (tak jak na slajdzie jest dla wersji niestałej), ale potem dopisz właśnie definicję char& operator[](std::size_t n); ale tak, żeby nie powielać kodu. W tym celu warto użyć rzutowanie const_cast na typ char&, ale z obiektu będącego wywołaniem operatora[] w wersji const. Zapewnia to std::as_const (nagłówek <utility>) bo pozwala uzyskać referencję typu const do przekazanego argumentu. Na przykład, int x = 10; auto& std::as_const(x); spowoduje dedukcję typu const int&. W naszym przypadku należy użyć tego do *this i wywołać [] dla argumentu n. Zademonstruj pisząc jakiś przykład w programie.

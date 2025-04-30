@@ -1,0 +1,14 @@
+{
+    "name": "C++ DevContainer",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools"
+    ]
+}
+
