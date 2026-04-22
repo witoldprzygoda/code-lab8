@@ -1,3 +1,3 @@
-# imię i nazwisko
+# Imię i nazwisko:
 
-# Laboratorium 9
+# Laboratorium 8
