@@ -27,18 +27,18 @@ class TString {
         void push_back(const char* c) { insert(len, c); } 
         void push_back(char c) { insert(len, c); }
 
-        char* TString::begin() { return ptr; }
-        char* TString::end() { return ptr + len; }
-        const char* TString::begin() const { return ptr; }
-        const char* TString::end() const { return ptr + len; }
-        size_t TString::length() const { return len; }
-        size_t TString::size() const noexcept { return len; }
-        void TString::clear() { delete[] ptr; ptr = nullptr; len = 0; }
-        bool TString::empty() const { return len ? false : true; }
-        char& TString::front() { return *ptr; }
-        const char& TString::front() const { return *ptr; }
-        char& TString::back() { return *(ptr + len - 1); }
-        const char& TString::back() const { return *(ptr + len - 1); }
+        char* begin() { return ptr; }
+        char* end() { return ptr + len; }
+        const char* begin() const { return ptr; }
+        const char* end() const { return ptr + len; }
+        size_t length() const { return len; }
+        size_t size() const noexcept { return len; }
+        void clear() { delete[] ptr; ptr = nullptr; len = 0; }
+        bool empty() const { return len ? false : true; }
+        char& front() { return *ptr; }
+        const char& front() const { return *ptr; }
+        char& back() { return *(ptr + len - 1); }
+        const char& back() const { return *(ptr + len - 1); }
 
 
         friend std::ostream& operator<<( std::ostream& strumien, const TString& s );
